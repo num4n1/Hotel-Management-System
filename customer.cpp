@@ -1,15 +1,15 @@
-//import statements
 #include<string.h>
-#include<iostream.h>
-#include<iomanip.h>
-#include<fstream.h>
+#include<iostream>
+#include<iomanip>
+#include<fstream>
 #include<conio.h>
 #include<math.h>
 #include<stdio.h>
 #include<time.h>
 #include<process.h>
 
-//class declaration
+using namespace std;
+
 class customer
 {
 	int custm_id;
@@ -120,7 +120,7 @@ class Generatebill:public customer
 	   cout<<"\n      THANK YOU !!!!!";
 	   cout<<"\n      Visit Again !";
 	  }
-	  getch();
+	  void getch();
 
   };
 
@@ -433,7 +433,7 @@ void customer::search_customer()
 			printf("%-18d",c.custm_id);
 			printf("%s",c.custm_name);
 			cout<<"\n\n\n   Room Type        Room No. \n";
-			cout<<"__________________________________\n";<<endl;
+			cout<<"__________________________________\n"<<endl;
 			cout<<"   ";
 			printf("%-18s",c.roomtype);
 			printf("%d",c.roomno);
